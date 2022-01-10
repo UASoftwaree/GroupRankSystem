@@ -4,5 +4,5 @@ local promoteButton = script.Parent
 local rs = game.ReplicatedStorage.GroupRankEvent
 
 promoteButton.MouseButton1Click:Connect(function()
-    rs:FireServer(UserText, RoleText)
+    rs:FireServer(UserText.Text, RoleText.Text)
 end)
