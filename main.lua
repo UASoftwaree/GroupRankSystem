@@ -1,1 +1,2 @@
-
+require(.roblox)
+require(.replit)
