@@ -10,7 +10,7 @@ game.Players.PlayerAdded:Connect(function(player)
     if player:GetRankInGroup(groupid) >= 100 then
         rs.OnServerEvent:Connect(function(player, UserText, RoleText)
 
-            UserText = game.Players:GetUserIdFromNameAsync(UserText)
+            UserText = game.Players:FIndFirstChild(UserText)
 
             local UserId = UserText
             local RoleId = RoleText
